@@ -1,0 +1,4 @@
+#ifndef MANIPULATE_HPP
+#define MANIPULATE_HPP
+
+#endif // MANIPULATE_HPP
