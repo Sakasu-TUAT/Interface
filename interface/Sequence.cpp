@@ -9,11 +9,9 @@ float Fire::showAttackPower() {
     return param.attackPower;
 }
 
-void printState(){
-    cout << static_cast<int>(state) << endl; 
-}
-
-
+// void printState(){
+//     cout << state << endl; 
+// }
 
 // int Fire::attackPower(){
 //     return 100;

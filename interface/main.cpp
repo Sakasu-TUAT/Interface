@@ -6,6 +6,8 @@ namespace {
    Fire fire(fireParameter);
 };
 
+// using namespace sequence;
+
 map<MagicType,unique_ptr<Magic>> magics;
 
 template<typename Iterator> 
@@ -16,6 +18,8 @@ template<typename Iterator>
 void showMagicName(Iterator it){
    cout <<(it->second)->name() << endl;
 }
+
+// $ rm -rf ディレクトリ名
 
 void showAllElements(const MagicType magicType){
    auto usingMagic = magics.find(magicType); //map内のmagicTypeへのイテレータを返す
