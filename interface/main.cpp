@@ -44,7 +44,7 @@ int main(){
    }
 
 
-   for(int i=0; i<10; i++){
+   for(int i=0; i<5; i++){
       data.emplace_back(make_pair(i, sin(fire.showAttackPower()*i)));
    }
    //  showAllElements(MagicType::shiden);

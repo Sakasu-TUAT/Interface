@@ -33,8 +33,9 @@ enum class State {
     sleep,
 };
 
-inline State& operator++(State& seq){
+State& operator++(State& seq){
     switch (seq) {
+        case State::sleep: return seq = State::ready;
         case State::ready: return seq = State::go;
         case State::go: return seq = State::sleep;
         default: return  seq = State::sleep;
@@ -45,10 +46,10 @@ State state = State::sleep;
 
 void printState(){
     switch (state) {
-        case State::sleep: cout << "SLEEP" << endl;
-        case State::ready: cout << "READY" << endl;
-        case State::go:    cout << "GO" << endl;
-        default: cout << "Hogeeee" << endl;
+        case State::sleep: cout << "SLEEP" << endl; break;
+        case State::ready: cout << "READY" << endl; break;
+        case State::go:    cout << "GO" << endl; break;
+        default: cout << "Hogeeee" << endl; break;
     }
 }
 
