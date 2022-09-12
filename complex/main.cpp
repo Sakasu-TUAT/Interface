@@ -29,6 +29,14 @@ int main (){
     cout << c.x() << "," << c.y() << endl;
     c.print();
     d.print();
+    d+=7.5;
+    d.print();
+    Complex e = d;
+    if(e==d) cout << "Yes" << endl;
+    e+=d;
+    (e==d) ?
+    cout <<"Yes"<< endl : 
+    cout << "No" << endl;
 }
 
 /*
